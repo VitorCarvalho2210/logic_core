@@ -1,0 +1,34 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="main-container">
+    <section class="hero">
+        <h1 class="display-4 animate-fade-in">@Model.Message</h1>
+        <p class="lead">Este é um exemplo de integração entre lógica em C# e design personalizado com CSS.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Começar Agora</a>
+            <a href="/Privacy" class="btn btn-outline-secondary btn-lg">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="icon">🚀</div>
+            <h3>Rápido</h3>
+            <p>Construído com ASP.NET Core para máxima performance.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🎨</div>
+            <h3>Moderno</h3>
+            <p>Design responsivo e elegante utilizando CSS moderno.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🛠️</div>
+            <h3>Poderoso</h3>
+            <p>Lógica robusta no backend com a linguagem C#.</p>
+        </div>
+    </section>
+</div>
